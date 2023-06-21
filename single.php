@@ -1,0 +1,1 @@
+<h1>ito  ay single page.php</h1>

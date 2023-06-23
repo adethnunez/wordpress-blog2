@@ -65,7 +65,7 @@
                 <div class="card__sm__content">
                 <small><?php echo get_the_date('M d, Y'); ?></small>
                   <h3><?php the_title(); ?></h3>
-                  <a href="#">Read More...</a>
+                  <a href="<?php the_permalink(); ?>">Read More...</a>
                 </div>
               </div>
 

@@ -1,13 +1,13 @@
 <?php get_header()?>
 
-
+<?php if(have_posts()) : while(have_posts()) : the_post()?>
 <div class="banner__single">
     <div class="container">
         <div class="banner__top">
             <h1><?php the_title ();?></h1>
             <ul>
                 <li><?php echo get_the_date('M j, Y')?></li>
-                <li><?php echo get_the_author_meta('display_name');?></li>
+                <li><?php echo get_the_author_meta('first_name');?></li>
             </ul>
         </div>
 
@@ -69,6 +69,13 @@
         
     </div>
 </article>
+
+<?php endwhile;
+    else:
+    echo "NO MORE POST!!";
+    endif ;
+
+?>
 
 <section class="feature_single">
     <div class="container">

@@ -724,11 +724,13 @@
     margin-bottom: 3rem;
     text-align: center;
   }
-  .testimonial__grid{
+
+  /* .testimonial__grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 3rem;
-  }
+  } */
+  
   .testimonial__info{
     display: flex;
     gap: 2rem;

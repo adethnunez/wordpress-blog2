@@ -39,3 +39,14 @@ const observer = new IntersectionObserver((entries) => {
 lazyImg.forEach((image) => {
   observer.observe(image);
 });
+
+//slider
+var slider = tns({
+  container: '.testimonial__grid',
+  items: 2,
+  slideBy: 'page',
+  autoplay: false,
+  controls: false,
+  nav: false,
+  mouseDrag: true
+});
